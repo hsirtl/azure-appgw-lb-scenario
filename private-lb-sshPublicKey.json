@@ -159,6 +159,9 @@
       "type": "Microsoft.Network/loadBalancers",
       "name": "[parameters('lbName')]",
       "location": "[resourceGroup().location]",
+      "sku": {
+        "name": "Standard"
+      },
       "properties": {
         "frontendIPConfigurations": [
           {
